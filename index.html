@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Шүйде сүйегі</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Roboto', sans-serif;
+      background-color: #f5f5dc; /* Бежевый фон */
+      color: #333;
+      text-align: center;
+    }
+
+    header {
+      padding: 20px;
+      background-color: rgba(255, 255, 255, 0.5);
+      margin: 20px auto;
+      max-width: 900px;
+      border-radius: 20px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    header h1 {
+      font-size: 2.5em;
+      color: #222;
+    }
+
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      padding: 20px;
+    }
+
+    .photo-section {
+      width: 90%;
+      max-width: 400px;
+      position: relative;
+      overflow: hidden;
+      border-radius: 15px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    }
+
+    .photo-section img {
+      width: 100%;
+      height: auto;
+      display: block;
+      transition: transform 0.3s ease;
+    }
+
+    .photo-section:hover img {
+      transform: scale(1.03);
+    }
+
+    .caption {
+      position: absolute;
+      bottom: 10px;
+      left: 10px;
+      background-color: rgba(255, 255, 255, 0.85);
+      padding: 8px 12px;
+      border-radius: 6px;
+      font-weight: bold;
+      font-size: 1em;
+    }
+
+    table {
+      width: 90%;
+      max-width: 900px;
+      margin: 30px auto;
+      border-collapse: collapse;
+      font-size: 1em;
+    }
+
+    th, td {
+      border: 1px solid #999;
+      padding: 10px;
+    }
+
+    th {
+      background-color: #e6e6e6;
+    }
+
+    caption {
+      font-size: 1.3em;
+      margin-bottom: 10px;
+    }
+
+    .students {
+      font-size: 14px;
+      margin: 20px auto;
+      max-width: 800px;
+      text-align: left;
+    }
+
+    @media (max-width: 768px) {
+      .caption {
+        font-size: 0.9em;
+      }
+
+      table {
+        font-size: 0.9em;
+      }
+
+      .students {
+        font-size: 13px;
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Шүйде сүйегі</h1>
+  </header>
+
+  <div class="gallery">
+    <div class="photo-section">
+      <img src="затылочная.jpg" alt="Фото 1">
+      <div class="caption">Ішкі көрініс</div>
+    </div>
+
+  <table>
+    <caption>Ішкі анатомиялық құрылымдар</caption>
+    <tr>
+      <th>№</th>
+      <th>Латинский</th>
+      <th>Русский</th>
+      <th>Қазақша</th>
+    </tr>
+    <tr><td>1</td><td>foramen occipitale magnum</td><td>большое затылочное отверстие</td><td>үлкен шүйде тесігі</td></tr>
+    <tr><td>2</td><td>clivus</td><td>скат</td><td>еңіс</td></tr>
+    <tr><td>3</td><td>sulcus sinus petrosi inferioris</td><td>борозда нижнего каменистого синуса</td><td>төменгі тасты веналық қойнау жүлгесі</td></tr>
+    <tr><td>4</td><td>canalis condylaris</td><td>мыщелковый канал</td><td>шүйде айдаршығының өзегі</td></tr>
+    <tr><td>5</td><td>sulcus sinus transversus</td><td>борозда поперечного синуса</td><td>көлденең веналық қойнау жүлгесі</td></tr>
+    <tr><td>6</td><td>sulcus sinus sagittalis superioris</td><td>борозда верхнего сагиттального синуса</td><td>жоғарғы сагиттал веналық қойнау жүлгесі</td></tr>
+    <tr><td>7</td><td>protuberantia occipitalis interna</td><td>внутренний затылочный выступ</td><td>ішкі шүйде төмпешігі</td></tr>
+    <tr><td>8</td><td>crista occipitalis interna</td><td>внутренний затылочный гребень</td><td>ішкі шүйде қыры</td></tr>
+  </table>
+
+
+    <div class="photo-section">
+      <img src="затылочная — копия.jpg" alt="Фото 2">
+      <div class="caption">Сыртқы көрінісі</div>
+    </div>
+  </div>
+
+  <table>
+    <caption>Сыртқы анатомиялық құрылымдар</caption>
+    <tr>
+      <th>№</th>
+      <th>Латинский</th>
+      <th>Русский</th>
+      <th>Қазақша</th>
+    </tr>
+    <tr><td>1</td><td>protuberantia occipitalis externa</td><td>наружный затылочный выступ</td><td>сыртқы шүйде төмпешігі</td></tr>
+    <tr><td>2</td><td>linea nuchae inferior</td><td>нижняя выйная линия</td><td>төменгі желке сызығы</td></tr>
+    <tr><td>3</td><td>condylus occipitalis</td><td>затылочный мыщелок</td><td>шүйде айдаршығы</td></tr>
+    <tr><td>4</td><td>pars lateralis</td><td>латеральная часть</td><td>бүйір бөлігі</td></tr>
+    <tr><td>5</td><td>linea nuchae superior</td><td>верхняя выйная линия</td><td>жоғарғы желке сызығы</td></tr>
+  </table>
+
+</body>
+</html>
